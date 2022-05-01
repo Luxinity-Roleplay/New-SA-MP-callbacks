@@ -37,7 +37,7 @@ sampctl package install Abielfrl/New-SA-MP-callbacks
 Include in your code and begin using the library:
 
 ```pawn
-#include <New-SA-MP-callbacks>
+#include <callbacks>
 ```
 
 ## List of Callbacks
