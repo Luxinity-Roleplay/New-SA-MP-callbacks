@@ -1,6 +1,6 @@
 # New-SA-MP-callbacks
 
-[![sampctl](https://img.shields.io/badge/sampctl-New--SA--MP--callbacks-2f2f2f.svg?style=for-the-badge)](https://github.com/Abielfrl/New-SA-MP-callbacks)
+[![sampctl](https://img.shields.io/badge/sampctl-New--SA--MP--callbacks-2f2f2f.svg?style=for-the-badge)](https://github.com/Luxinity/New-SA-MP-callbacks)
 
 <!--
 Short description of your library, why it's useful, some examples, pictures or
