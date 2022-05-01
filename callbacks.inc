@@ -558,7 +558,7 @@ stock IsPlayerSprayingVehicle(playerid, vehicleid)
 stock CB_CreateVehicle(modelid, Float:x, Float:y, Float:z, Float:rotation, color1, color2, respawn_delay, addsiren = 0)
 {
 	new
-	    vehicleid = CreateVehicle(modelid, x, y, z, rotation, color1, color2, respawn_delay, addsiren);
+	    vehicleid = CreateVehicle(modelid, x, y, z, rotation, color1, color2, respawn_delay, bool:addsiren);
 
 	if(vehicleid != INVALID_VEHICLE_ID)
 	{
@@ -584,7 +584,7 @@ stock CB_AddStaticVehicle(modelid, Float:x, Float:y, Float:z, Float:rotation, co
 stock CB_AddStaticVehicleEx(modelid, Float:x, Float:y, Float:z, Float:rotation, color1, color2, respawn_delay, addsiren = 0)
 {
 	new
-	    vehicleid = AddStaticVehicleEx(modelid, x, y, z, rotation, color1, color2, respawn_delay, addsiren);
+	    vehicleid = AddStaticVehicleEx(modelid, x, y, z, rotation, color1, color2, respawn_delay, bool:addsiren);
 
 	if(vehicleid != INVALID_VEHICLE_ID)
 	{
@@ -594,10 +594,10 @@ stock CB_AddStaticVehicleEx(modelid, Float:x, Float:y, Float:z, Float:rotation, 
 	return vehicleid;
 }
 
-stock CB_ApplyAnimation(playerid, animlib[], animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync = 0)
+stock CB_ApplyAnimation(playerid, const animlib[],  const animname[], Float:fDelta, loop, lockx, locky, freeze, time, forcesync = 0)
 {
 	new
-		ret = ApplyAnimation(playerid, animlib, animname, fDelta, loop, lockx, locky, freeze, time, forcesync);
+		ret = ApplyAnimation(playerid, animlib, animname, fDelta, loop, lockx, locky, freeze, time, bool:forcesync);
 
 	if(ret)
 	{
