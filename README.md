@@ -31,7 +31,7 @@ Happy Pawning!
 Simply install to your project:
 
 ```bash
-sampctl package install Abielfrl/New-SA-MP-callbacks
+sampctl package install Luxinity-Roleplay/New-SA-MP-callbacks
 ```
 
 Include in your code and begin using the library:
